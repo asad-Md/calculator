@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: space-between; */
-  background-color: rgb(74, 74, 163);
+  background-color: #D8B4F8;
   width: 51dvh;
   height: 65dvh;
   padding:1dvh;
@@ -23,7 +23,7 @@
   flex-direction: column;
   align-items: end;
   /* justify-content: space-between; */
-  background-color: rgb(213, 171, 171);
+  background-color: #FFC7EA;
   width: 50dvh;
   height: 12vh;
   border-radius: 1.6dvh;
@@ -53,8 +53,8 @@
   /* padding:2.5dvh; */
   border-radius: 1.6dvh;
   margin-top: 1dvh;
-  background-color:rgb(113, 163, 162);
-  color:black;
+  background-color:#CAEDFF;
+  color:rgb(201, 155, 237);
 }
 
 .innBtns{
@@ -64,7 +64,7 @@
   justify-content: center;
   border-radius: 1.6dvh;
   color: darkslateblue;
-  background-color: rgb(240, 203, 172);
+  background-color: #edffab;
   font-size: 4dvh;
   width: 10dvh;
   height: 10dvh;
