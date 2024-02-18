@@ -42,7 +42,7 @@
   transition: all 0.3s;
   margin: 1.2dvh;
   margin-top: 0.4dvh;
-  box-shadow: 0.15dvh 0.8dvh 0.1dvh rgba(250, 150, 71, 1);
+  box-shadow: 0.15dvh 0.8dvh 0.1dvh rgb(231, 137, 66);
 }
 
 .innBtns:hover {
@@ -59,7 +59,7 @@
 
 .utilInnBtns {
   margin-top: 0.4dvh;
-  box-shadow: 0.15dvh 0.8dvh 0.1dvh rgba(250, 150, 71, 1);
+  box-shadow: 0.15dvh 0.8dvh 0.1dvh rgb(231, 137, 66);
 }
 
 .utilInnBtns:hover {
