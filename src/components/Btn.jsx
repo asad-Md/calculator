@@ -1,7 +1,9 @@
 import ghIcon from "../assets/gh.svg";
 import ghDark from "../assets/ghd.svg";
-import del from "../assets/delete.png";
-import clear from "../assets/clear.png";
+import del from "../assets/delIcon.png";
+import clear from "../assets/crossIcon.png";
+import themes from "../assets/themesIcon.png";
+
 export default function Btn({ btn, bType }) {
     let btnClass = 'numBtn innBtns'
     if (bType === 'util'){
@@ -38,6 +40,16 @@ export default function Btn({ btn, bType }) {
         className="icons"
         />
     );
+    }
+    else if (btn === "Th") {
+        btn = (
+            <img
+                src={themes}
+                alt='themes'
+                id='themesIcon'
+                className="icons"
+            />
+        );
     }
 
   return <div className={btnClass} >{btn}</div>;

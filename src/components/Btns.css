@@ -81,9 +81,8 @@
   justify-content: center;
   border-radius: 1.6dvh;
   color: darkslateblue;
-  font-size: 4dvh;
-  width: 7dvh;
-  height: 7dvh;
+  width: 5dvh;
+  height: 5dvh;
   cursor: pointer;
   transition: all 0.3s;
   margin: 0dvh;

@@ -2,7 +2,7 @@ import "./Btns.css";
 import Btn from "./Btn";
 
 const btns = [
-  "^",
+  "x²",
   "(",
   ")",
   "%",
@@ -21,7 +21,7 @@ const btns = [
   ".",
   0,
   "=",
-  "/",
+  "÷",
 ];
 const util = ["gh", "clear", "Del", "Th"];
 export default function Btns({ bType }) {
