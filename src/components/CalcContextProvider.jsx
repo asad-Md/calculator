@@ -16,8 +16,8 @@ export default function CalcContextProvider({children}) {
     const [calcState, setCalcState] = useState({
         nums:[],
         operators:[],
-        input:0,
-        output:null,
+        input:undefined,
+        output:undefined,
     })
 
     const ctxValue = {
