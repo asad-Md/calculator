@@ -2,13 +2,22 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    /* justify-content: space-between; */
-    background-color: #AB92BF;
+    background-color: rgba(133, 95, 147, 1);;
     width: 50dvh;
     height: 12vh;
     border-radius: 1.6dvh;
     cursor:grab;
-    margin-bottom: 1dvh;   
+    margin-bottom: 1dvh;
+    box-shadow: .15dvh .5dvh 0.1dvh rgb(186, 121, 208),
+    inset 0.08dvh .095dvh 0dvh rgba(237, 213, 255,1),
+    inset -.08dvh 0dvh 0dvh rgba(237, 213, 255,1);   
+  }
+
+  #display:hover{
+    background-color: rgb(155, 112, 171);
+    box-shadow: .15dvh .5dvh 0.1dvh rgb(245, 214, 252),
+    inset 0.08dvh .095dvh 0dvh rgba(237, 213, 255,1),
+    inset -.08dvh 0dvh 0dvh rgba(237, 213, 255,1),
   }
   
   .displayP{
@@ -17,9 +26,13 @@
     min-width: 48dvh;
     max-width: 48dvh;
     max-height: 4dvh;
-    margin: 1dvh 1dvh;
-    color: darkslateblue;
+    margin: .6dvh 1dvh;
+    color: rgb(199, 144, 217);
     align-items: center;
     justify-content: flex-end;
     font-size: 4dvh;
+  }
+
+  .displayP:hover{
+    color: rgb(254, 199, 242);
   }

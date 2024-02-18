@@ -1,8 +1,13 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0;
   text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #calcContainer {
@@ -11,7 +16,8 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: space-between; */
-  background-color: #F6AE2D;
+  /* background-color: #fa9647; */
+  background-color: rgba(101, 207, 166, 1);
   width: 51dvh;
   height: 88dvh;
   padding:1dvh;
