@@ -1,5 +1,5 @@
 export function calculate(numArr, opsArray) {
-    const operations = ['^', '*', '/', '+', '-'];
+    const operations = ['^', 'x', '/', '+', '-'];
 
     const applyOperation = (a, b, op) => {
         switch (op) {
