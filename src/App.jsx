@@ -10,7 +10,8 @@ function App() {
     <CalcContextProvider>
       <div id="calcContainer">
         <Display />
-        <Btns />
+        <Btns bType='util' />
+        <Btns bType='nums' />
       </div>
     </CalcContextProvider>
   )

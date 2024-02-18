@@ -3,10 +3,22 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 50dvh;
-    height: 50dvh;
+    height: 62dvh;
     /* padding:2.5dvh; */
     border-radius: 1.6dvh;
     margin-top: 1dvh;
+    background-color:#CAEDFF;
+    color:rgb(201, 155, 237);
+  }
+
+  #utilCont {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 50dvh;
+    height: 12dvh;
+    /* padding:2.5dvh; */
+    border-radius: 1.6dvh;
+    margin-top: 0dvh;
     background-color:#CAEDFF;
     color:rgb(201, 155, 237);
   }
@@ -31,3 +43,19 @@
     margin: 1.2dvh;
   }
   
+  #ghIcon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.6dvh;
+    color: darkslateblue;
+    background-color: #CAEDFF;
+    font-size: 4dvh;
+    width: 8dvh;
+    height: 8dvh;
+    cursor: pointer;
+    padding:1dvh;
+    transition: all 0.3s;
+    margin: 1.2dvh;
+  }

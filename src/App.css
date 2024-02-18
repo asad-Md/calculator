@@ -1,19 +1,19 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
 #calcContainer {
-  margin: 10dvh auto;
+  margin: 1dvh auto auto auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: space-between; */
   background-color: #D8B4F8;
   width: 51dvh;
-  height: 65dvh;
+  height: 88dvh;
   padding:1dvh;
   border-radius: 1.6dvh;
 }
