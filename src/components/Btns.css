@@ -34,7 +34,7 @@
   border-radius: 1.6dvh;
   color: darkslateblue;
   /* background-color: #65cfa6 */
-  background-color: rgba(250, 150, 71, 1);
+  background-color: rgb(255, 180, 123);
   font-size: 5dvh;
   width: 10dvh;
   height: 10dvh;
@@ -42,13 +42,13 @@
   transition: all 0.3s;
   margin: 1.2dvh;
   margin-top: 0.4dvh;
-  box-shadow: 0.15dvh 0.8dvh 0.1dvh rgb(227, 117, 34);
+  box-shadow: 0.15dvh 0.8dvh 0.1dvh rgba(250, 150, 71, 1);
 }
 
 .innBtns:hover {
-  background-color: #66e1b2;
+  background-color: rgba(250, 150, 71, 1);
   color: #fff;
-  box-shadow: 0.1dvh 0.8dvh 0.1dvh rgba(58, 135, 104, 0.973);
+  box-shadow: 0.15dvh 0.8dvh 0.1dvh rgb(214, 94, 1);
 }
 
 .innBtns:active {
@@ -59,12 +59,13 @@
 
 .utilInnBtns {
   margin-top: 0.4dvh;
-  box-shadow: 0.15dvh 0.8dvh 0.1dvh rgba(218, 104, 17, 0.997);
+  box-shadow: 0.15dvh 0.8dvh 0.1dvh rgba(250, 150, 71, 1);
 }
 
 .utilInnBtns:hover {
+  background-color: rgba(250, 150, 71, 1);
   color: #fff;
-  box-shadow: 0.1dvh 0.8dvh 0.1dvh rgba(58, 135, 104, 0.973);
+  box-shadow: 0.15dvh 0.8dvh 0.1dvh rgb(214, 94, 1);
 }
 
 .utilInnBtns:active {
