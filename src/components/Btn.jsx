@@ -2,7 +2,11 @@ import ghIcon from "../assets/gh.svg";
 import ghDark from "../assets/ghd.svg";
 import del from "../assets/delete.png";
 import clear from "../assets/clear.png";
-export default function Btn({ btn }) {
+export default function Btn({ btn, bType }) {
+    let btnClass = 'numBtn innBtns'
+    if (bType === 'util'){
+        btnClass = 'numBtn innBtns utilInnBtns'
+    }
   if (btn === "gh") {
     btn = (
       <a href='https://github.com/N0Uchan/calculator'>
@@ -36,7 +40,7 @@ export default function Btn({ btn }) {
     );
     }
 
-  return <div className='numBtn innBtns' >{btn}</div>;
+  return <div className={btnClass} >{btn}</div>;
 }
 
 //onclick

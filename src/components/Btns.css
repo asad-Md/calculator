@@ -6,7 +6,7 @@
   /* padding:2.5dvh; */
   border-radius: 1.6dvh;
   margin-top: 1dvh;
-  background-color: #ff6666;
+  background-color: #ffa2a2ba;
   color: rgb(201, 155, 237);
 }
 
@@ -15,12 +15,11 @@
   grid-template-columns: repeat(4, 1fr);
   width: 50dvh;
   height: 12dvh;
-  /* padding:2.5dvh; */
   border-radius: 1.6dvh;
   margin-top: 0dvh;
   background-color: #fdd964;
   color: rgb(201, 155, 237);
-  box-shadow: 3px 3px 5px #b36b00; /* Add this line */
+  box-shadow: inset .5dvh .5dvh .5dvh #c08517; 
 }
 
 .innBtns {
@@ -37,13 +36,35 @@
   cursor: pointer;
   transition: all 0.3s;
   margin: 1.2dvh;
-  box-shadow: 3px 3px 5px rgba(184, 140, 65, 0.477); /* Add this line */
+  margin-top: .4dvh;
+  box-shadow: .1dvh .8dvh .1dvh rgba(133, 196, 171, .8);
 }
 
 .innBtns:hover {
-  background-color: #ffabab;
+  background-color: #66e1b2;
   color: #fff;
-  box-shadow: 3px 3px 5px rgba(184, 140, 65, 0.777); /* Add this line */
+  box-shadow: .1dvh .8dvh .1dvh rgba(133, 196, 171, 1); 
+}
+
+.innBtns:active {
+  margin-top: 1.2dvh;
+  margin-bottom:.4dvh;
+  box-shadow: inset .2dvh .2dvh .2dvh rgb(78, 171, 135); 
+}
+
+.utilInnBtns {
+  margin-top: .4dvh;
+  box-shadow: .1dvh .8dvh .1dvh rgba(133, 196, 171, .8); 
+}
+
+.utilInnBtns:hover {
+  color: #fff;
+  box-shadow: .1dvh .8dvh .1dvh rgba(133, 196, 171, 1); 
+}
+
+.utilInnBtns:active {
+  margin-top: 1.2dvh;
+  box-shadow: inset .2dvh .2dvh .2dvh rgb(78, 171, 135); 
 }
 
 .icons {
@@ -58,11 +79,12 @@
   height: 8dvh;
   cursor: pointer;
   transition: all 0.3s;
-  margin: 1.2dvh;
+  margin: 0dvh;
+  padding:1dvh;
 }
 
 .icons:hover {
-  background-color: #ffabab;
+  /* background-color: #ffabab; */
   color: #fff;
 }
 
