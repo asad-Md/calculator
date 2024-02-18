@@ -18,62 +18,6 @@
   border-radius: 1.6dvh;
 }
 
-#display{
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  /* justify-content: space-between; */
-  background-color: #FFC7EA;
-  width: 50dvh;
-  height: 12vh;
-  border-radius: 1.6dvh;
-  cursor:grab;
-  margin-bottom: 1dvh;   
-}
-
-.displayP{
-  display: flex;
-  min-height: 4dvh;
-  min-width: 48dvh;
-  max-width: 48dvh;
-  max-height: 4dvh;
-  margin: 1dvh 1dvh;
-  color: darkslateblue;
-  align-items: center;
-  justify-content: flex-end;
-  font-size: 4dvh;
-}
 
 
-#btnsCont {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 50dvh;
-  height: 50dvh;
-  /* padding:2.5dvh; */
-  border-radius: 1.6dvh;
-  margin-top: 1dvh;
-  background-color:#CAEDFF;
-  color:rgb(201, 155, 237);
-}
-
-.innBtns{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 1.6dvh;
-  color: darkslateblue;
-  background-color: #edffab;
-  font-size: 4dvh;
-  width: 10dvh;
-  height: 10dvh;
-  /* max-height: 12dvh ;
-  min-width: 12dvh;
-  min-height: 12dvh;
-  max-width: 12dvh; */
-  cursor: pointer;
-  transition: all 0.3s;
-  margin: 1.2dvh;
-}
 
