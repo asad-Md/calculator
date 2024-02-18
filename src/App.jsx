@@ -1,19 +1,19 @@
-import { useState } from "react";
 import "./App.css";
 import Display from "./components/Display";
 import Btns from "./components/BtnsContainer";
+import CalcContextProvider from "./components/calcContext";
 
 function App() {
-  const [count, setCount] = useState(0);
+  
 
   return (
-    <>
-      <div id='mainContainer'>
+    <CalcContextProvider>
+      <div id="calcContainer">
         <Display />
         <Btns />
       </div>
-    </>
-  );
+    </CalcContextProvider>
+  )
 }
 
 export default App;

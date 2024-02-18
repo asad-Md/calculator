@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-#mainContainer {
+#calcContainer {
   margin: 10dvh auto;
   display: flex;
   flex-direction: column;
