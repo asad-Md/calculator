@@ -7,6 +7,7 @@
   border-radius: 1.6dvh;
   margin-top: 1.2dvh;
   margin-bottom: 0.8dvh;
+  transition: all 0.3s;
   background-color: rgba(66, 190, 143,1 );
   color: rgb(201, 155, 237);
   box-shadow: 0.08dvh 0.8dvh 0.1dvh rgb(55, 155, 117,.995),

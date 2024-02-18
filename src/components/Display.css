@@ -7,6 +7,7 @@
     height: 12vh;
     border-radius: 1.6dvh;
     cursor:grab;
+    transition: all 0.3s;
     margin-bottom: 1dvh;
     box-shadow: .15dvh .5dvh 0.1dvh rgb(186, 121, 208),
     inset 0.08dvh .095dvh 0dvh rgba(237, 213, 255,1),
@@ -27,6 +28,7 @@
     max-width: 48dvh;
     max-height: 4dvh;
     margin: .6dvh 1dvh;
+    transition: all 0.3s;
     color: rgb(199, 144, 217);
     align-items: center;
     justify-content: flex-end;
