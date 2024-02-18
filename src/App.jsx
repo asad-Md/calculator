@@ -1,7 +1,7 @@
 import "./App.css";
 import Display from "./components/Display";
 import Btns from "./components/BtnsContainer";
-import CalcContextProvider from "./components/calcContext";
+import CalcContextProvider from "./components/CalcContextProvider";
 
 function App() {
   
