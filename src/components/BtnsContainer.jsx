@@ -31,6 +31,7 @@ export default function Btns({ bType }) {
       btnsId = "btnsCont";
       return (
         <Btn
+          bType={bType}
           key={i}
           btn={btn}
         />
