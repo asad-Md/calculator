@@ -33,10 +33,27 @@ export default function CalcContextProvider({ children }) {
         OPERATORS.includes(btnVal) &&
         OPERATORS.includes(calcState.nums[calcState.nums.length - 1])
       ) {
+        
+          console.log(btnVal);
+          setCalcState((prev) => {
+            const newNums = [...prev.nums];
+            newNums.pop();
+            newNums.push(btnVal);
+            return {
+              ...prev,
+              nums: newNums,
+              input: newNums.join(""),
+              output: "Thinking ...",
+            };
+          });
+        
+        
+      } else if (OPERATORS.includes(btnVal) && calcState.nums.length === 0) {
         setCalcState((prev) => {
+          console.log(btnVal);
           const newNums = [...prev.nums];
           newNums.pop();
-          newNums.push(btnVal);
+          newNums.push('0',btnVal);
           return {
             ...prev,
             nums: newNums,
@@ -44,8 +61,13 @@ export default function CalcContextProvider({ children }) {
             output: "Thinking ...",
           };
         });
-      } else {
+
+      }else {
+
+        if (btnVal === "x²") { btnVal= "²"}
+
         setCalcState((prev) => {
+          
           const newNums = [...prev.nums, btnVal];
           return {
             ...prev,

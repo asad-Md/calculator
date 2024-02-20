@@ -7,7 +7,7 @@ export function calculate(numArr, opsArray) {
             case '-': return a - b;
             case '*': return a * b;
             case '÷': return a / b;
-            case 'x²': return a ** b;
+            case '²': return a ** b;  //for x²
             case '%': return a % b;
             default: throw new Error('Unknown operation' + op);
         }
