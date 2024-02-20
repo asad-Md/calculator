@@ -35,7 +35,6 @@ export default function CalcContextProvider({ children }) {
         OPERATORS.includes(calcState.nums[calcState.nums.length - 1])
       ) {
         
-          console.log(btnVal);
           setCalcState((prev) => {
             const newNums = [...prev.nums];
             newNums.pop();
