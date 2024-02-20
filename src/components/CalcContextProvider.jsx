@@ -99,7 +99,7 @@ export default function CalcContextProvider({ children }) {
             ...prev,
             nums: newNums,
             input: newNums.join(""),
-            output: prev.nums.length=== 1 ? '' : 'Thinking ...',
+            output: newNums.length=== 0 ? '' : 'Thinking ...',
           };
         })
       } 
