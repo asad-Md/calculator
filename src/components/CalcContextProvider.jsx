@@ -9,7 +9,7 @@ export const CalcContext = createContext({
   //function to update nums
 });
 
-const OPERATORS = ["+", "-", "x", "÷", "x²","%", "."];
+const OPERATORS = ["+", "-", "x", "÷", "²","%"];
 
 export default function CalcContextProvider({ children }) {
   const [calcState, setCalcState] = useState({
@@ -29,6 +29,7 @@ export default function CalcContextProvider({ children }) {
     }
 
     if (bType === "nums") {
+      if (btnVal === "x²") { btnVal= "²"}
       if (
         OPERATORS.includes(btnVal) &&
         OPERATORS.includes(calcState.nums[calcState.nums.length - 1])
@@ -49,8 +50,8 @@ export default function CalcContextProvider({ children }) {
         
         
       } else if (OPERATORS.includes(btnVal) && calcState.nums.length === 0) {
+        
         setCalcState((prev) => {
-          console.log(btnVal);
           const newNums = [...prev.nums];
           newNums.pop();
           newNums.push('0',btnVal);
@@ -64,7 +65,7 @@ export default function CalcContextProvider({ children }) {
 
       }else {
 
-        if (btnVal === "x²") { btnVal= "²"}
+        
 
         setCalcState((prev) => {
           
