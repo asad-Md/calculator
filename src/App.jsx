@@ -6,8 +6,8 @@ import CalcContextProvider from "./components/CalcContextProvider";
 import { useState } from 'react';
 
 function App() {
-  const [theme,setTheme] = useState({color:'OrGrBlPr',index:0});
-  const Themes = [ 'OrGrBlPr','pokeTheme' ]  
+  const [theme,setTheme] = useState({color:'bluish',index:0});
+  const Themes = [ 'bluish','pokeTheme','default/noname' ]  
   function handleThemeChange (){
     setTheme((prev) => {
       let index = prev.index + 1;

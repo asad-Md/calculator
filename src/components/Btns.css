@@ -21,7 +21,7 @@
   height: 12dvh;
   border-radius: 1.6dvh;
   margin-top: 0dvh;
-  /* background-color: #fdd964; */
+  padding-top: .05dvh;
   background-color: rgb(126, 149, 214); ;
   color: rgb(201, 155, 237);
   box-shadow: inset 0.3dvh 0.4dvh 0.3dvh rgba(75, 88, 125, 1);
@@ -34,7 +34,6 @@
   justify-content: center;
   border-radius: 1.6dvh;
   color: darkslateblue;
-  /* background-color: #65cfa6 */
   background-color: rgb(255, 180, 123);
   font-size: 5dvh;
   width: 10dvh;
