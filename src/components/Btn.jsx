@@ -3,7 +3,7 @@ import { CalcContext } from "./CalcContextProvider.jsx";
 import IconBtn from "./IconBtn";
 
 
-export default function Btn({ btn, bType }) {
+export default function Btn({ btn, bType, themeFn }) {
     
     const calcContext = useContext(CalcContext); 
     let Icon = undefined;
@@ -11,7 +11,7 @@ export default function Btn({ btn, bType }) {
     if (bType === 'util'){
         btnClass = 'numBtn innBtns utilInnBtns'
 
-        Icon = <IconBtn btn={btn} />
+        Icon = <IconBtn themeFn={themeFn} btn={btn} />
     }
 
     

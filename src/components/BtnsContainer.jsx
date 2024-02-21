@@ -24,7 +24,7 @@ const btns = [
   "÷",
 ];
 const util = ["gh", "clear", "Del", "Th"];
-export default function Btns({ bType }) {
+export default function Btns({ bType , themeFn }) {
   let btnsComp, btnsId;
   if (bType === "nums") {
     btnsComp = btns.map((btn, i) => {
@@ -42,6 +42,7 @@ export default function Btns({ bType }) {
       btnsId = "utilCont";
       return (
         <Btn
+          themeFn={themeFn}
           bType={bType}
           key={i}
           btn={btn}

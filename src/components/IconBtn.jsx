@@ -4,7 +4,7 @@ import del from "../assets/delIcon.png";
 import clear from "../assets/crossIcon.png";
 import themesIcon from "../assets/themesIcon.png";
 
-export default function IconBtn({ btn }) {
+export default function IconBtn({ btn , themeFn }) {
   if (btn === "gh") {
     btn = (
       <a
@@ -45,6 +45,7 @@ export default function IconBtn({ btn }) {
         alt='themes'
         id='themesIcon'
         className='icons'
+        onClick={themeFn}
       />
     );
   }
