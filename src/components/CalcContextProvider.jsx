@@ -5,7 +5,9 @@ export const CalcContext = createContext({
   operators: [],
   input: "",
   output: "",
-
+  theme : '',
+  upCalcInfo: (bType, btnVal) => {},
+  delCalcInfo: () => {},
   //function to update nums
 });
 
@@ -16,7 +18,8 @@ export default function CalcContextProvider({ children }) {
     nums: [],
     operators: [],
     input: "",
-    output: "",
+    output: null,
+    theme : 'calcContainerTheme1'
   });
   //functtion to update nums
   //uses setCalcState to update the state
@@ -106,7 +109,7 @@ export default function CalcContextProvider({ children }) {
             nums: [],
             operators: [],
             input: "",
-            output: null ,
+            output: null,
           };
         });
       }
@@ -143,6 +146,7 @@ export default function CalcContextProvider({ children }) {
     operators: calcState.operators,
     input: calcState.input,
     output: calcState.output,
+    theme:calcState.theme,
     upCalcInfo: updateCalcInfo,
     delCalcInfo: delCalcInfo,
   };

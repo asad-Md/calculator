@@ -8,6 +8,7 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  background-color: #242424;
 }
 
 #calcContainer {
@@ -22,8 +23,12 @@
   padding:1dvh;
   border-radius: 1.6dvh;
   box-shadow : 0.2dvh .9dvh 0.1dvh rgb(1, 146, 91),
-              inset .2dvh 0.15dvh 0.1dvh rgb(169, 253, 221); 
+  inset .2dvh 0.15dvh 0.1dvh rgb(169, 253, 221); 
 }
+
+
+
+
 
 
 
