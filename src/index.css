@@ -16,3 +16,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  user-select: none
+}
