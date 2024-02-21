@@ -24,5 +24,5 @@ export function calculate(numArr, opsArray) {
 
     return numArr[0];
 }
-
+//showcase
 

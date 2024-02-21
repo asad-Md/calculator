@@ -24,11 +24,31 @@ export default function CalcContextProvider({ children }) {
   function updateCalcInfo(bType, btnVal) {
 
     if (btnVal === '='){
-      //result function
+      const numArr = [...calcState.nums];
+      //for each element in numArr, if it is x then replace it with *, and ÷ with / and ² with **2
+      for (let i = 0; i < numArr.length; i++){
+        if (numArr[i] === "x") {numArr[i] = "*"}
+        if (numArr[i] === "÷") {numArr[i] = "/"}
+        if (numArr[i] === "²") {numArr[i] = "**2"}
+      }
+      let outPut
+      try{
+        outPut = eval(numArr.join(''));
+        console.log(outPut);
+      }catch(e){
+        outPut = "Error";
+      }
+      setCalcState((prev) => { 
+        return {
+          ...prev,
+          output: outPut,
+        };
+      })
+      
       return;
     }
 
-    if (bType === "nums") {
+    else if (bType === "nums") {
       if (btnVal === "x²") { btnVal= "²"}
       if (
         OPERATORS.includes(btnVal) &&
@@ -86,7 +106,7 @@ export default function CalcContextProvider({ children }) {
             nums: [],
             operators: [],
             input: "",
-            output: "",
+            output: null ,
           };
         });
       }
@@ -98,7 +118,7 @@ export default function CalcContextProvider({ children }) {
             ...prev,
             nums: newNums,
             input: newNums.join(""),
-            output: newNums.length=== 0 ? '' : 'Thinking ...',
+            output: newNums.length=== 0 ? null : 'Thinking ...',
           };
         })
       } 

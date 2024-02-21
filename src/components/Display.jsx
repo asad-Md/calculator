@@ -7,6 +7,6 @@ export default function Display() {
 
     return (<div id='display'>
             <p id='input' className="displayP" >{ calcCtx.input ? calcCtx.input : "〜(￣▽￣〜)" }</p>
-            <p id='output' className="displayP" >{ calcCtx.output ? calcCtx.output : "༼ つ ◕_◕ ༽つ" }</p>
+            <p id='output' className="displayP" >{ calcCtx.output != null ? calcCtx.output : "༼ つ ◕_◕ ༽つ" }</p>
         </div>)
 }
