@@ -1,6 +1,9 @@
 import './Display.css'
 import { CalcContext } from './CalcContextProvider'
 import { useContext , useState } from 'react'
+import { motion } from "framer-motion";
+import { displayFramer } from "../util/framerVariants.js";
+
 
 export default function Display() {
     const calcCtx = useContext(CalcContext)
@@ -21,7 +24,12 @@ export default function Display() {
         }
     }
 
-    return (<div id='display'>
+    return (<motion.div id='display' 
+                variants = { displayFramer }
+                initial="initial"
+                animate="animate"
+                whileHover="whileHover" >
+
             <p id='input' onClick={()=>handleCopy('input')}
              className="displayP" >{ calcCtx.input ? calcCtx.input : "〜(￣▽￣〜)" }</p>
             <p id='output' onClick={()=>handleCopy('output')}
@@ -29,5 +37,5 @@ export default function Display() {
             
             <p id="copiedText" className={copiedText} >Copied Text To ClipBoard</p>
 
-        </div>)
+        </motion.div>)
 }

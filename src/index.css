@@ -14,8 +14,15 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none; /* Internet Explorer */
+  scrollbar-width: none; 
 }
 
 *{
   user-select: none
+}
+
+/* WebKit-based browsers */
+body::-webkit-scrollbar {
+  display: none;
 }

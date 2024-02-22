@@ -8,8 +8,10 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  background-color: #242424;
+  background-color: #242424;  
+  
 }
+
 
 #calcContainer {
   margin: 1dvh auto auto auto;

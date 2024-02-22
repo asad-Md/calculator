@@ -1,5 +1,8 @@
 import "./Btns.css";
 import Btn from "./Btn";
+import { motion } from "framer-motion";
+import { utilBtnFramer , numsBtnFramer } from "../util/framerVariants.js";
+
 
 const btns = [
   "x²",
@@ -23,25 +26,32 @@ const btns = [
   "=",
   "÷",
 ];
+
 const util = ["gh", "clear", "Del", "Th"];
-export default function Btns({ bType , themeFn }) {
+
+
+export default function BtnsContainer({ bType, themeFn , variant }) {
   let btnsComp, btnsId;
+
   if (bType === "nums") {
     btnsComp = btns.map((btn, i) => {
       btnsId = "btnsCont";
       return (
         <Btn
+        variant={numsBtnFramer}
           bType={bType}
           key={i}
           btn={btn}
         />
       );
     });
+    
   } else if (bType === "util") {
     btnsComp = util.map((btn, i) => {
-      btnsId = "utilCont";
+      btnsId = "utilCont";       
       return (
         <Btn
+          variant={utilBtnFramer}
           themeFn={themeFn}
           bType={bType}
           key={i}
@@ -49,7 +59,19 @@ export default function Btns({ bType , themeFn }) {
         />
       );
     });
+    
   }
 
-  return <div id={btnsId}>{btnsComp}</div>;
+  return (
+    <motion.div
+      id={btnsId} 
+      key={bType}
+      variants={variant}
+      initial="initial"
+      animate="animate"
+      whileHover="whileHover"
+    >
+      {btnsComp}
+    </motion.div>
+  );
 }

@@ -1,33 +1,57 @@
 import "./App.css";
-import "./components/themes.css"
+import "./components/themes.css";
 import Display from "./components/Display";
-import Btns from "./components/BtnsContainer";
+import BtnsContainer from "./components/BtnsContainer";
 import CalcContextProvider from "./components/CalcContextProvider";
-import { useState } from 'react';
+import { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  containerFramer,
+  utilContainerFramer,
+  btnsContainerFramer,
+} from "./util/framerVariants.js";
 
 function App() {
-  const [theme,setTheme] = useState({color:'bluish',index:0});
-  const Themes = [ 'bluish','pokeTheme','default/noname' ]  
-  function handleThemeChange (){
+  const [theme, setTheme] = useState({ color: "bluish", index: 0 });
+  const Themes = ["bluish", "pokeTheme", "default/noname"];
+  function handleThemeChange() {
     setTheme((prev) => {
       let index = prev.index + 1;
-      if (index === Themes.length) {index = 0}
+      if (index === Themes.length) {
+        index = 0;
+      }
       return {
         color: Themes[index],
-        index: index
-      }
-    })
+        index: index,
+      };
+    });
   }
 
   return (
     <CalcContextProvider>
-      <div id="calcContainer" className={theme.color}>
+      <motion.div
+        id='calcContainer'
+        variants={containerFramer}
+        className={theme.color}
+        initial='initial'
+        animate='animate'
+        whileHover='whileHover'
+        when='when'
+      >
         <Display />
-        <Btns bType='util' themeFn={ handleThemeChange } />
-        <Btns bType='nums' />
-      </div>
+
+        <BtnsContainer
+          bType='util'
+          variant={utilContainerFramer}
+          themeFn={handleThemeChange}
+        />
+        <BtnsContainer
+          variant={btnsContainerFramer}
+          bType='nums'
+        />
+      </motion.div>
     </CalcContextProvider>
-  )
+  );
 }
 
 export default App;
