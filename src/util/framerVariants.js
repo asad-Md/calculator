@@ -1,8 +1,7 @@
 export const containerFramer = {
   initial: { y: "-100dvh" }, /// names here are option itsms
-  animate: { y: 0, transition: { delay: 0.2, type: "tween", duration: 0.1 } },
-  whileHover: { scale: 1.01 },
-  when: "beforeChildren",
+  animate: { y: 0, transition: { delay: 0.2, type: "tween", duration: 0.1,when: "beforeChildren" } },
+  whileHover: { scale: 1.01 }  
 };
 export const displayFramer = {
     initial: { y: "-100dvh", opacity:0 }, /// names here are option itsms
@@ -22,7 +21,7 @@ export const utilContainerFramer = {
 };
 
 export const btnsContainerFramer = {
-  initial: { y: "-100dvh", opacity: 0 }, //names here are option itsms
+  initial: { y: "100dvh", opacity: 0 }, //names here are option itsms
   animate: {
     opacity: 1,
     y: 0,
