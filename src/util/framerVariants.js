@@ -11,10 +11,10 @@ export const displayFramer = {
 }
 
 export const utilContainerFramer = {
-  initial: { y: "-80dvh", opacity: 0.4 }, // names here are option itsms
+  initial: { x: "150dvh", opacity: 0.4 }, // names here are option itsms
   animate: {
     opacity: 1,
-    y: 0,
+    x: 0,
     transition: { delay: 0.6, type: "tween", duration: 0.2 },
   },
   whileHover: { scale: 1.01 },
